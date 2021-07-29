@@ -1,0 +1,50 @@
+body{
+    padding:0;
+    background-image: linear-gradient(to right, #5a3f37, #2c7744);
+}   
+.Contenedor{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5, 100px);
+}
+#Igual{
+    min-height: 200px;  /*altura minima*/
+}
+#Cero{
+    min-width: 200px; /*ancho minimo*/
+}
+.Contenedor>button{
+   
+    border:1px solid white;
+    outline:none;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );    
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Yomogi';
+}
+.Contenedor>button:hover{
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgb(74, 135, 66) 0%, rgb(118, 181, 110) 26.2%, rgb(123, 157, 118) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );    
+}
+.Display {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.Resultado{
+    color: white;
+    text-align: right;
+    width: 380px;
+    height: 100px;
+    font-size: 400%;
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+    border:1px solid white;
+}
